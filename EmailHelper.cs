@@ -1,3 +1,9 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
+
 public static class EmailHelper
     {
         public static void Email(string subject, string body, string to, bool isHtml, List<EmailAttachment> attachments, List<string> cc = null, string bcc = null, string from = null, string fromDisplayName = null)
